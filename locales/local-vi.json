@@ -155,5 +155,7 @@
     "SWAP_ERC_ADDR":"Địa chỉ ví Eth của bạn:",
     "SWAP_ERC_BALANCE":"Số dư ERC-20:",
     "SWAP_ERC_AMOUNT":"Số ENQ ERC-20",
-    "LAST_10_TX":"10 giao dịch cuối cùng"
+    "LAST_10_TX":"10 giao dịch cuối cùng",
+    "CONNECT_EXTENSION":"kết nối phần mở rộng",
+    "GENERATE_TX":"Generate transaction",
 }

@@ -145,5 +145,7 @@
     "SWAP_ERC_ADDR":"Alamat Ethereum Anda:",
     "SWAP_ERC_BALANCE":"Saldo ERC-20:",
     "SWAP_ERC_AMOUNT":"Jumlah ERC-20 ENQ",
-    "LAST_10_TX":"10 transaksi terakhir"
+    "LAST_10_TX":"10 transaksi terakhir",
+    "CONNECT_EXTENSION":"Hubungkan ekstensi",
+    "GENERATE_TX":"Generate transaction",
 }

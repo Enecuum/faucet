@@ -145,5 +145,7 @@
     "SWAP_ERC_ADDR":"あなたのEthereumアドレス：",
     "SWAP_ERC_BALANCE":"ERC-20残高：",
     "SWAP_ERC_AMOUNT":"ERC-20 ENQの額",
-    "LAST_10_TX":"今までの10つのトランザクション"
+    "LAST_10_TX":"今までの10つのトランザクション",
+    "CONNECT_EXTENSION":"拡張機能を接続します",
+    "GENERATE_TX":"Generate transaction",
 }

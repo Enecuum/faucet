@@ -145,5 +145,7 @@
     "SWAP_ERC_ADDR":"عنوان Ethereum الخاص بك:",
     "SWAP_ERC_BALANCE":"رصيد ERC-20:",
     "SWAP_ERC_AMOUNT":"مبلغ ERC-20 ENQ",
-    "LAST_10_TX":"آخر 10 معاملات"
+    "LAST_10_TX":"آخر 10 معاملات",
+    "CONNECT_EXTENSION":"ربط التمديد",
+    "GENERATE_TX":"Generate transaction",
 }

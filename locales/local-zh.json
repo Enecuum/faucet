@@ -145,5 +145,7 @@
     "SWAP_ERC_ADDR":"您的以太坊地址：",
     "SWAP_ERC_BALANCE":"ERC-20余额：",
     "SWAP_ERC_AMOUNT":"ERC-20 ENQ数量",
-    "LAST_10_TX":"最近10笔交易"
+    "LAST_10_TX":"最近10笔交易",
+    "CONNECT_EXTENSION":"连接扩展",
+    "GENERATE_TX":"Generate transaction",
 }
