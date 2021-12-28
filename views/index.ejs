@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="{{ lang }}" ng-app="myApp" class="ng-scope">
+<head>
+    <meta charset="utf-8" />
+     <base href="/">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faucet BIT</title>
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
+
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+ 	<!-- App css -->
+    <link href="../assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/app.min.css" rel="stylesheet" type="text/css" />
+    <link href="../assets/css/rotate.css" rel="stylesheet" type="text/css" />
+    <!-- angularJS scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsrsasign/8.0.12/jsrsasign-all-min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular-resource.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-cookies.js"></script>
+    <!-- angularJS translation scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.18.1/angular-translate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-translate/2.18.1/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@zxing/library@0.15.1/umd/index.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138901721-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-138901721-2');
+    </script>
+</head>
+<body data-layout="topnav" class="boxed-layout pb-0">
+    <div class="ng-scope">
+        <div class="account-pages mt-5 mb-5">
+            <div class="container">
+             <span><img src="assets/images/faucet-1.png" height ="100"></span>
+           </div>
+        </div>
+
+        <div class="account-pages mt-5 mb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card">
+
+                            <!-- Logo -->
+                            <div class="card-header pt-3 pb-3 text-center bg-primary" style="background-color:#63636d!important">
+                                <a href="/">
+                                    <span><img src="assets/images/logo-white-bit.png" alt="BIT logo" height="40"></span>
+                                </a>
+                            </div>
+
+                            <div class="card-body p-4">
+                                <ng-view></ng-view>
+                                
+                            </div> <!-- end card-body -->
+                        </div>
+                        {{sendResult}}
+                        <!-- end card -->
+                        <!-- end row -->
+
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end page -->
+        <div ng-include="'views/footer.html'"></div>
+        </div>
+        <!-- App js -->
+        <script src="assets/js/app.min.js"></script>
+    <!--div ng-include = "'../views/cookies-alert.html'"></div-->
+    
+</body>
+<script src="views/module.js"></script>
+</html>

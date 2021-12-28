@@ -1,0 +1,16 @@
+ <div class="text-center w-75 m-auto">
+     <h4 class="text-dark-50 text-center mt-0 font-weight-bold">{{'GET_BIT' | translate}}</h4>
+     <p class="text-muted mb-4">{{'RECEIVING_RULES' | translate}}</p>
+ </div>
+ <div name="craneForm" >
+     <div class="form-group">
+         <label for="addrPub">{{'ADDR_LABEL' | translate}}</label>
+         <input class="form-control" ng-class="addrIsValid" ng-model="user.addr" name="addr" id="addr">
+         <div ng-show="!addrValid" style="color:#fa5c7c">
+             {{errAddr | translate}}
+         </div>
+     </div>
+     <div class="form-group mb-0 mt-3 text-center">
+         <button class="btn btn-primary" type="button" ng-click="validate()" >{{'SEND' | translate}}</button>
+ </div>
+</div>

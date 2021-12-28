@@ -1,0 +1,57 @@
+    <div >
+    	<div class="account-pages mt-5 mb-5">
+    		<div class="container">
+    		<img src="assets/images/crane-1.png">
+    	</div>
+    	</div>
+        <div class="account-pages mt-5 mb-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-5">
+                        <div class="card">
+
+                            <!-- Logo -->
+                            <div class="card-header pt-3 pb-3 text-center bg-primary" style="background-color:#63636d!important">
+                                <a href="index.html">
+                                    <span><img src="assets/images/logo-white-bit.png" alt="BIT logo" height="40"></span>
+                                </a>
+                            </div>
+
+                            <div class="card-body p-4">
+                                
+                                <div class="text-center w-75 m-auto">
+                                    <h4 class="text-dark-50 text-center mt-0 font-weight-bold">{{'GET_BIT' | translate}}</h4>
+                                    <p class="text-muted mb-4">{{'RECEIVING_RULES' | translate}}</p>
+                                </div>
+
+                                <div name="craneForm">
+
+                                    <div class="form-group">
+                                        <label for="addrPub">{{'ADDR_LABEL' | translate}}</label>
+                                        <input class="form-control" ng-class="keyIsValid" ng-model="user.prv" id="addr">
+                                        <div ng-show="!keyValid" style="color:#fa5c7c">
+                                            {{errAddr | translate}}
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-0 mt-3 text-center">
+                                        <button class="btn btn-primary" type="button" ng-click="validate()" style="background-color: #63636d!important;
+    border-color: #63636d!important;
+    box-shadow: 0 2px 6px 0 rgba(83, 84, 103, 0.5);">{{'SEND' | translate}}</button>
+                                    </div>
+                                </div>
+                            </div> <!-- end card-body -->
+                        </div>
+                        <!-- end card -->
+                        <!-- end row -->
+
+                    </div> <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        <!-- end page -->
+		<div ng-include="'/views/footer.html'"></div>
+		</div>
+        <!-- App js -->
+        <script src="../assets/js/app.min.js"></script>

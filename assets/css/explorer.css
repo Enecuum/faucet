@@ -1,0 +1,125 @@
+body.boxed-layout .wrapper {
+    max-width: 1600px;
+}
+
+.navbar-brand {
+    margin-right: 2rem;
+}
+
+.scope-col {
+    display: none;
+}
+
+@media (min-width: 991.99px) {
+    .navbar-nav li.nav-item {
+        flex-shrink: 10;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .app-search {
+        min-width: 180px;
+    }
+}
+
+@media (min-width: 991.99px) and (max-width: 1200px) {
+    .topnav .navbar-nav .nav-link {
+        padding: 0 0.6rem;
+    }
+}
+
+#history.tab-pane div[aria-label="Rewind records"] a.btn-secondary,
+#swapFromERCForm .col-form-label {
+    white-space: nowrap;
+}
+
+#qrModal .modal-content {
+    background: #ffffff;
+}
+
+@media (max-width: 576px) {
+    #history .btn-sm {
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        font-size: 0.7rem;
+    }
+
+    .flex-xs-column {
+        flex-direction: column!important;
+    }
+
+    .xs-text-center {
+        text-align: center!important;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .sm-text-center {
+        text-align: center!important;
+    }
+}
+@media (max-width: 992px) {
+    #navTxHistory {
+        margin-left: -0.8rem;
+        margin-right: -0.8rem;
+    }
+
+    #history > .row > .col-12 {
+        padding-left: 0rem;
+        padding-right: 0rem;
+        font-size: 0.7rem;
+    }
+
+    .txHistory {
+        padding: 0rem;
+    }
+
+    .txHistory table thead {
+        display: none;
+    }
+
+    .txHistory table tr {
+        display: flex;
+        flex-direction: column;
+        padding: 1.2rem 0.5rem;
+    }
+
+    .txHistory table tr:nth-child(odd) {
+        background-color: rgba(62,72,83,0.6);
+    }
+
+    .txHistory table tr:hover {
+        background-color: rgba(62,72,83,1);
+    }
+
+    .txHistory table td {
+        white-space: nowrap;
+        flex-grow: 1;
+        border: none;
+        padding: 0.2rem;
+    }
+
+    .scope-col {
+        display: inline-block;
+        width: 80px;
+        text-align: right;
+        padding-right: 5rem;
+        font-weight: bold;
+    }
+
+    .txHistory table .cell-status .badge {
+        font-size: 0.8rem;
+    }
+}
+
+.cookies-alert {
+    background: #464f5b;
+    -webkit-box-shadow: 0 0 35px 0 rgba(49,57,66,.5);
+    box-shadow: 0 0 35px 0 rgba(49,57,66,.5);
+    color: #aab8c5;
+    border: none;
+}
+
+

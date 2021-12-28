@@ -1,0 +1,18 @@
+{
+  "port" : 80,
+  "quantity":251000000000,
+  "timeout_min":10, 
+  "nodeURL" : "https://bit.enecuum.com",
+  "mysql" : {
+      "host" : "localhost",
+      "database" : "faucet",
+      "user" : "root",
+      "password" : "root"
+  },
+  "minConf" : 1,
+  "bit_hub" : {
+      "comment" : "Address from which all BIT transfers will be made",
+      "prv" : "",
+      "pub" : ""
+  }
+}
