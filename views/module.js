@@ -38,26 +38,36 @@ app.controller('sendCtrl', function($scope, $http, $window, $location) {
 
     $scope.request_pubkey = async function(){
         await $window.ENQweb3lib.connect()
-        let pubkey = await $window.ENQweb3lib.enable()
-        $scope.user.addr = pubkey.pubkey
-        $scope.$apply();
+        .then(async () => {
+            let pubkey = await $window.ENQweb3lib.enable()
+            $scope.user.addr = pubkey.pubkey
+            $scope.$apply();
+        })
+        .catch(err => {
+            console.warn('extention connect: ',err)
+        })
     }
 
     $scope.generateTx = async function(){
       await $window.ENQweb3lib.connect()
-      if(!$scope.user.addr){
-        await $scope.request_pubkey()
-      }
-      let data = {
-        from: {
-          pubkey:$scope.user.addr,
-        },
-        to: '029dd222eeddd5c3340e8d46ae0a22e2c8e301bfee4903bcf8c899766c8ceb3a7d',
-        tokenHash:'0000000000000000000000000000000000000000000000000000000000000001',
-        value:Math.floor(Math.random()*10)*1e10,
-        nonce:Math.floor(Math.random()*1e10)
-      }
-      $window.ENQweb3lib.sendTransaction(data)
+      .then( async () => {
+        if(!$scope.user.addr){
+            await $scope.request_pubkey()
+          }
+          let data = {
+            from: {
+              pubkey:$scope.user.addr,
+            },
+            to: '029dd222eeddd5c3340e8d46ae0a22e2c8e301bfee4903bcf8c899766c8ceb3a7d',
+            tokenHash:'0000000000000000000000000000000000000000000000000000000000000001',
+            value:Math.floor(Math.random()*10)*1e10,
+            nonce:Math.floor(Math.random()*1e10)
+          }
+          $window.ENQweb3lib.sendTransaction(data)
+      })
+      .catch(err => {
+        console.warn('extention connect: ',err)
+     })
     }
 
     $scope.send = function(key) {
