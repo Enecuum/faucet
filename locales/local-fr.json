@@ -149,5 +149,7 @@
     "SWAP_ERC_ADDR":"Votre adresse Ethereum :",
     "SWAP_ERC_BALANCE":"Solde ERC-20 :",
     "SWAP_ERC_AMOUNT":"Montant ERC-20 ENQ",
-    "LAST_10_TX":"10 dernières transactions"
+    "LAST_10_TX":"10 dernières transactions",
+    "CONNECT_EXTENSION":"Connecter l'extension",
+    "GENERATE_TX":"Generate transaction",
 }

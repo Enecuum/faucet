@@ -32,6 +32,10 @@ app.post("/",async function( req, res ){
 	return res.send(result);
 });
 
+app.get("/successful", function( req, res ){
+    res.redirect('/');
+});
+
 sendTX = async function(pubkey) {
     try {
         let last = await db.get_last_time(pubkey);

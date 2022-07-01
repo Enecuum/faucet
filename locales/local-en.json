@@ -7,6 +7,8 @@
     "SEND_SUCCESSFUL":"You are now successfully sended coins.",
     "TIMEOUT":"Time limit exceeded !",
     "TIMEOUT_DESC":"You can request coins once per hour.",
+    "CONNECT_EXTENSION":"Connect extension",
+    "GENERATE_TX":"Generate transaction",
 
     
     "COOKIES_ALERT_TEXT":"By continuing to browse our website, you agree to the use of cookies that ensure correct operation of the website.",

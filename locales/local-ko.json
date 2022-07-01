@@ -145,5 +145,7 @@
     "SWAP_ERC_ADDR":"내 이더리움 주소:",
     "SWAP_ERC_BALANCE":"ERC-20 잔고:",
     "SWAP_ERC_AMOUNT":"ERC-20 ENQ 금액",
-    "LAST_10_TX":"최근 거래 10건"
+    "LAST_10_TX":"최근 거래 10건",
+    "CONNECT_EXTENSION":"확장 연결",
+    "GENERATE_TX":"Generate transaction",
 }
